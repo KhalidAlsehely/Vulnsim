@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
      
+    fetch("https://vulnerabilitysimulaterapi.aliarthur.com/api/admin/users")
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error("Fetch failed:", err));
+
   
     // Show answer (admin-only functionality)
     function showAnswer(answerId) {
