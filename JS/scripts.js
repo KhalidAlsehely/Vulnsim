@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
   
         try {
-          const response = await fetch("https://vulnerabilitysimulaterapi.aliarthur.com/auth/login", {
+          const response = await fetch("https://vulnerabilitysimulaterapi.aliarthur.com/api/admin/users", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
