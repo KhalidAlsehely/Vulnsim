@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         try {
-          const response = await fetch("https://vulnerabilitysimulaterapi.aliarthur.com/api", {
+          const response = await fetch("https://vulnerabilitysimulaterapi.aliarthur.com/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: "include",
