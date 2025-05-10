@@ -102,7 +102,16 @@ document.addEventListener("DOMContentLoaded", function () {
           alert("Both email and password are required.");
           return;
         }
-  
+
+  fetch("https://vulnerabilitysimulaterapi.aliarthur.com/auth/login", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  credentials: "include",
+  body: JSON.stringify({ ... })
+});
+
         try {
           const response = await fetch("https://vulnerabilitysimulaterapi.aliarthur.com/api", {
             method: "POST",
